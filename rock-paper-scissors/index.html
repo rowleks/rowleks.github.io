@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Testing repository -->
     <title>Rock Paper Scissors</title>
     <style>
       body {
         background-color: rgb(25, 25, 25);
         font-family: Arial, Helvetica, sans-serif;
         color: white;
+        text-align: center;
       }
 
       .move-icon {
         height: 50px;
+        cursor: pointer;
       }
 
       .move-button {
@@ -24,14 +27,15 @@
         margin-bottom: 20px;
       }
 
+
+
       .result {
         font-size: 25px;
         font-weight: bold;
       }
       
       .rock-button {
-        margin-left: 61px;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
       }
 
       .reset-button {
@@ -43,16 +47,18 @@
         cursor: pointer;
         margin-top: 20px;
       }
-      .container {
-        margin-left: 80px;
+      img:hover, button:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+        
       }
     </style>
 
   </head>  
   <body>
     <h1>Rock Paper Scissors Game</h1>
-    
-    <div>
+  
+    <div class="gen-container">
 
       <div class="container">
         <button class="move-button rock-button" onclick="playGame('rock');">
@@ -98,16 +104,19 @@
       total: 0
     }
 
+    // This function to display scores on the page
     function updateScoreElement() {
       document.querySelector('.js-score')
       .innerHTML = `Wins: ${score.wins} | Losses: ${score.losses} | Ties: ${score.ties} | Total Played: ${score.total}`
     }
   
+    // This function to display the moves and move pic on the page
     function movesElement (playerMove, computerMove) {
       document.querySelector('.js-moves')
       .innerHTML = `You <img class="move-icon "src="${playerMove}-emoji.png"> - <img class="move-icon" src="${computerMove}-emoji.png"> Computer`
     }
 
+  //This function to display the result on the page
     function resultElement (result) {
       document.querySelector('.js-result')
       .innerHTML = `${result}`
@@ -123,7 +132,7 @@
           return 'scissors';
         }
       }
-      
+
       function playGame(playerMove) {
         let result = '';
         let computerMove = pickComputerMove();
@@ -155,6 +164,8 @@
             result = 'Tie';
           }
         }
+
+        // conditions for the result
 
         if (result === 'You win') {
           score.wins += 1;
