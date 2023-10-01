@@ -44,7 +44,7 @@ section.contents, div.menu-items {
 }
 
 /* created this media query to display nav button for xtra small screen devices */
-@media (min-width: 500px) and (max-width: 576px) {
+@media (min-width: 400px) and (max-width: 576px) {
   .d-xs-block {
     display: block !important;
   }}
