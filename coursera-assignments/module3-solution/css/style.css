@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box !important;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container-fluid, .navbar {
+  background-color: #223dec;
+  margin-top: 0px;
+}
+.navbar-brand {
+  color: #fff;
+}
+
+a.navbar-brand:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+        
+}
+
+button.navbar-toggler {
+  color: #fff;
+}
+
+#navbarNav a {
+  text-align: center;
+  background-color: #fff;
+  border: #223dec solid;
+  }
+  #navbarNav a:hover {
+    color: #223dec;
+  }
+
+ul:first-child {
+  margin-top: 10px;
+}
+
+section.contents, div.menu-items {
+  margin-top: 20px;
+}
+
+/* created this media query to display nav button for xtra small screen devices */
+@media (min-width: 500px) and (max-width: 576px) {
+  .d-xs-block {
+    display: block !important;
+  }}
+
+  #chicken, #beef, #sushi {
+    background-color: #efefef;
+    padding: 10px;
+    border: solid 10px #fff;
+    text-align: left;
+    
+
+  }
+
+
+
+
+
+

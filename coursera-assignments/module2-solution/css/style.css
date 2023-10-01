@@ -4,45 +4,48 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 20px;
+  margin-left: 10px;
 }
+
+.text-box {
+  position: relative;
+  padding: 40px 10px 30px;
+  background-color: #faebd7;
+  border: solid 1px black;
+}
+
 
 h1 {
   text-align: center;
-  font-size: 175%;
 }
 
-h2 {
-  position: relative;
-  bottom: 15px;
-  right: -16px;
+h3 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
   margin: 0;
-  margin-left: 60%;
   background-color: #3c2fb5;
-  text-align: right;
-  border: #0d0d0d 1px solid;
-  font-size: 125%;
+  padding: 5px;
+  border-left: #0d0d0d 1px solid;
+  border-bottom: #0d0d0d 1px solid;
   
 }
 
 .header1 {
   background-color: #d61aa1;
+  color: #fff;
 }
 
 .header2 {
   background-color: #ab0303;
+  color: #fff;
 }
 
 .header3 {
   background-color: #c2620e;
+  color: #fff;
 }
 
-section {
-  background-color: #767c82;
-  padding: 15px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
 
 .row {
   width: 100%;
@@ -53,7 +56,7 @@ section {
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid #0d0d0d;
+    border: 10px solid #fff;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -65,7 +68,7 @@ section {
     width: 25%;
   }
   .col-lg-4 {
-    width: 31%;
+    width: 33.33%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -97,7 +100,7 @@ section {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid #0d0d0d;
+    border: 10px solid #fff;
   }
   .col-md-1 {
     width: 8.33%;
@@ -142,7 +145,7 @@ section {
 @media (max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    border: 1px solid #0d0d0d;
+    border: 10px solid #fff
   }
   .col-sm-1 {
     width: 8.33%;
