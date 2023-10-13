@@ -12,7 +12,7 @@ const btn = document.getElementById('btn')
 
     }
      color.textContent = hexColor;
-        body.setAttribute()
+        body.style.backgroundColor = hexColor
  }
 
  )
