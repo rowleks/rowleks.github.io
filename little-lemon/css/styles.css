@@ -1,0 +1,107 @@
+body {
+margin: 2rem 5%;
+background-color: #EDEFEE;font-family: Arial, Helvetica, serif;
+
+}
+
+header > img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+nav li a {
+    text-decoration: none;
+    color: #495E57;
+}
+
+a:hover {
+    font-weight: bold;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "head" "main" "footer";
+}
+
+header {
+grid-area: head;  
+background-color: #e0dcdc;  
+padding-top: 1rem;
+margin-bottom: 2rem;
+}
+main {
+grid-area: main;
+}
+
+.main-contents {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;  
+}
+
+.main-contents article {
+   margin: 15px 30px 15px 0px;
+    max-width: 300px;
+    background-color: #e0dcdc;
+   padding: 0px 1rem 1rem;
+    
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+h1, h2 {
+    color: #495E57;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+#promo {  
+    background: url('/images/discount.jpg') center no-repeat; 
+    background-size: cover;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    
+}
+
+#last-art {
+    margin-right: 0px;
+}
+
+hr {
+    margin-top: 20px;
+}
+.promo-text {
+    width: 25rem
+}
+
+span.discount {
+    text-decoration: line-through;
+}
+
+
+
+
+footer {
+display: flex;
+grid-area: footer;
+justify-content: space-between;
+}
