@@ -105,3 +105,20 @@ display: flex;
 grid-area: footer;
 justify-content: space-between;
 }
+
+
+
+/* Define styles for smaller screens */
+@media (max-width: 449px) {
+    .container {
+      grid-template-rows: auto auto auto; /* Adjust grid template for smaller screens */
+    }
+    .main-contents {
+      flex-direction: column; /* Stack articles vertically on smaller screens */
+    }
+    .main-contents article {
+      margin: 15px 0; /* Remove right margin for articles on smaller screens */
+      max-width: 100%; /* Expand articles to the full width on smaller screens */
+    }
+  }
+  
