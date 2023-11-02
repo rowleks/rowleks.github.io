@@ -75,7 +75,7 @@ h2 {
 }
 
 #promo {  
-    background: url('/images/discount.jpg') center no-repeat; 
+    background: url('../images/discount.jpg') center no-repeat; 
     background-size: cover;
     padding: .5rem;
     margin-bottom: 1rem;
