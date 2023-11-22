@@ -1,0 +1,149 @@
+
+@media screen and (max-width: 439px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    a:hover {
+        color: #9932CC;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: #9932CC;
+      }
+
+      hr {
+        margin-bottom: 2rem;
+      }
+
+      .section__pic-container {
+        margin-left: 15rem;
+        border-radius: 50%;
+      }
+
+      .section__pic-container:hover {
+        transform: none;
+      }
+
+      #experience,
+      .experience-details-container {
+        margin-top: 2rem;
+      }
+      #profile,
+      .section-container, main.main-contents {
+        display: block;
+      }
+      .arrow {
+        display: none;
+      }
+      section,
+      .section-container {
+        height: fit-content;
+      }
+      section {
+        margin: 10rem;
+      }
+
+      .section__text {
+        margin-top: 2rem;
+      }
+
+      .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+        border-radius: 50%;
+      }
+      .about-containers {
+        margin-top: 0;
+      }
+      section#about, section#profile {
+        display: block;
+        margin-bottom: 50rem;
+      }
+
+      .about-containers,
+      .contact-info-upper-container,
+      .btn-container {
+        flex-wrap: wrap;
+      }
+
+      section#about {
+        padding: 0;
+        margin: 30rem auto;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 1rem auto 20rem auto;
+  
+  }
+
+  .section__text {
+    margin-top: 5rem;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  section#about, section#profile {
+    display: block;
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+.about-containers {
+  gap: 2rem;
+  margin-bottom: .1rem;
+  margin-top: 3rem;
+}
+}
+
+
+
